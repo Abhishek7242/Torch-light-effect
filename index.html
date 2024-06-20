@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over Light Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Abhishek</h2>
+        <div class="light">
+
+        </div>
+    </div>
+    <script>
+
+        let position=document.documentElement;
+
+        position.addEventListener('mousemove',(e)=>{
+
+            position.style.setProperty('--x',e.clientX+'px')
+            position.style.setProperty('--y',e.clientY+'px')
+
+        });
+
+    </script>
+</body>
+</html>
